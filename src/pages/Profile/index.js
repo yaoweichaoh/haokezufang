@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Button, Modal } from "antd-mobile";
 
-import { BASE_URL, isAuth, API, getToken, removeToken } from "../../utils";
+import { BASE_URL, isAuth, API } from "../../utils";
 
 import styles from "./index.module.css";
 
@@ -43,9 +43,9 @@ export default class Profile extends Component {
     if (!this.state.isLogin) return;
 
     const res = await API.get("/user", {
-      headers: {
-        authorization: getToken()
-      }
+      // headers: {
+      //   authorization: getToken()
+      // }
     });
     // console.log(res);
     const { body, status } = res.data;
@@ -54,8 +54,6 @@ export default class Profile extends Component {
         userInfo: body
       });
     } else if (status === 400) {
-      // 登录异常 移除Token
-      removeToken();
       this.setState({
         isLogin: false
       });
@@ -72,13 +70,10 @@ export default class Profile extends Component {
         onPress: async () => {
           // 服务器退出
           await API.post("/user/logout", {
-            headers: {
-              authorization: getToken()
-            }
+            // headers: {
+            //   authorization: getToken()
+            // }
           });
-
-          // 移除Token
-          removeToken();
 
           // 更新状态
           this.setState({

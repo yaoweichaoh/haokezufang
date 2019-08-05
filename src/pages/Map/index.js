@@ -37,7 +37,7 @@ export default class Map extends React.Component {
 
   async initMap() {
     const { label, value } = await getCurrentCity();
-
+    // console.log(label, value);
     // 创建百度地图对象
     // 参数：表示地图容器的id值
     const map = new BMap.Map("container");
@@ -100,7 +100,7 @@ export default class Map extends React.Component {
         id
       }
     });
-    console.log(res);
+    // console.log(res);
     const { nextZoom, type } = this.getTypeAndZoom();
     res.data.body.forEach(item => {
       this.createOverlays(nextZoom, type, item);
