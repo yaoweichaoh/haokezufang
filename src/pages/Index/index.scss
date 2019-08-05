@@ -1,0 +1,191 @@
+.index {
+  .swiper {
+    height  : 212px;
+    position: relative;
+
+    img {
+      height: 212px;
+    }
+  }
+
+  .renting {
+    padding: 0 10px;
+
+    h3 {
+      padding  : 15px 0 15px 10px;
+      font-size: 15px;
+    }
+
+    span {
+      color    : #787d82;
+      font-size: 14px;
+    }
+  }
+
+  .nav {
+    text-align: center;
+    padding   : 10px 0;
+
+    img {
+      width: 48px;
+    }
+
+    p {
+      margin-top: 7px;
+      font-size : 13px;
+      color     : #333;
+    }
+  }
+}
+
+.group {
+  background-color: #f6f5f6;
+  overflow        : hidden;
+
+  .rentingNav {
+    padding: 0 13px;
+
+    .title {
+      p {
+        color        : #333;
+        font-size    : 13px;
+        font-weight  : 700;
+        margin-bottom: 5px;
+      }
+
+      span {
+        color    : #999;
+        font-size: 12px;
+      }
+    }
+
+    .imgs {
+      width: 55px;
+
+      img {
+        width: 55px;
+      }
+    }
+
+    .am-flexbox-item .am-grid-item-content {
+      padding: 8px 0;
+    }
+
+    .am-flexbox {
+      background-color: transparent;
+    }
+
+    .am-grid-item {
+      height          : 85px;
+      margin-bottom   : 10px;
+      background-color: #fff;
+    }
+
+    .am-grid-item:first-child {
+      margin-right: 10px;
+    }
+
+    .am-flexbox .am-grid-item-content {
+      padding: 10px 10px;
+    }
+  }
+}
+
+.news {
+  padding: 5px 10px 15px 0;
+
+  .news-title {
+    padding: 15px;
+
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .am-fiexbox {
+    padding-left : 15px;
+    height       : 90px;
+    margin-bottom: 20px;
+
+    .boximg {
+      width : 120px;
+      height: 90px;
+
+      img {
+        width : 120px;
+        height: 90px;
+      }
+    }
+  }
+
+  .am-title {
+    height : 90px;
+    padding: 0 0 0 12px;
+
+    h3 {
+      font-size: 14px;
+      color    : #333;
+    }
+
+    .am-span {
+      color     : #9c9fa1;
+      font-size : 12px;
+      margin-top: 41px;
+    }
+  }
+}
+
+.am-seach {
+  position: absolute;
+  top     : 25px;
+  width   : 100%;
+  z-index : 2;
+  padding : 5px 10px;
+
+  .seach-left {
+    flex            : 1;
+    border-radius   : 3px;
+    margin-right    : 10px;
+    height          : 34px;
+    background-color: #fff;
+
+    .seach {
+      padding-left: 10px;
+
+      span {
+        color    : #333;
+        font-size: 14px;
+      }
+
+      .icon-arrow {
+        font-size: 12px;
+      }
+    }
+
+    .from {
+      border-left: solid 1px #e5e5e5;
+      margin-left: 12px;
+      line-height: 16px;
+      padding    : 0 2px 0 12px;
+
+      .icon-seach {
+        font-size     : 15px;
+        vertical-align: middle;
+      }
+
+      span {
+        margin-left: 4px;
+        font-size  : 13px;
+        color      : #9c9fa1;
+      }
+    }
+  }
+
+  .seach-icon {
+    .iconfont {
+      width : 25px;
+      height: 25px;
+      color : #fff;
+    }
+  }
+}

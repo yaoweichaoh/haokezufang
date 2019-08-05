@@ -1,0 +1,16 @@
+.iconfont {
+  font-size: 20px;
+}
+
+.home-box {
+  padding-bottom: 50px;
+  height        : 100%;
+}
+
+.home {
+  position: fixed;
+  height  : 50px;
+  bottom  : 0;
+  width   : 100%;
+  z-index : 1;
+}
